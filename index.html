@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIDISC patcher</title>
+    <meta
+      name="description"
+      content="Browser patcher: build 1.40MIDISC for Elektron Octatrack from your own stock OS 1.40C."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="brand">Octatrack OS tool</p>
+      <h1>MIDISC patcher</h1>
+      <p class="lede">
+        Build <code>1.40MIDISC</code> in your browser from your own official
+        <code>OS 1.40C</code>. Nothing is uploaded — patching stays on this device.
+      </p>
+
+      <aside class="warn" aria-label="Warnings">
+        <h2>Warnings</h2>
+        <ul>
+          <li>
+            Bleeding-edge / custom firmware. Expect unfinished work, crashes, and
+            data loss. Back up your projects first.
+          </li>
+          <li>
+            Modified firmware can brick or soft-brick the unit and voids normal
+            support expectations. Not affiliated with or endorsed by Elektron.
+          </li>
+          <li>
+            No Octatrack firmware is hosted here. You provide your own official
+            <code>OCTATRACK_OS1.40C.syx</code>. The patched image is built entirely
+            in the browser.
+          </li>
+          <li>
+            <strong>Do not redistribute</strong> the generated <code>.bin</code> /
+            <code>.syx</code> — they contain Elektron’s OS. Share this page instead.
+          </li>
+          <li>
+            Flash only via CompactFlash: copy <code>1.40MIDISC.bin</code> to the
+            card root → <strong>OS UPGRADE</strong>. Keep stock 1.40C for recovery
+            (MIDI or CF).
+          </li>
+        </ul>
+      </aside>
+
+      <section class="panel">
+        <h2>File patch</h2>
+        <p>
+          Drop your stock <code>OCTATRACK_OS1.40C.syx</code>, then build. You’ll get
+          <code>1.40MIDISC.bin</code> (CF flash) and a matching <code>.syx</code>.
+        </p>
+
+        <div id="drop" role="button" tabindex="0" aria-label="Choose stock 1.40C syx file">
+          <strong>Drop 1.40C .syx here</strong>
+          <span>or click to choose a file</span>
+        </div>
+        <input id="file" type="file" accept=".syx,application/octet-stream" />
+
+        <div class="actions">
+          <button id="build" type="button" disabled>Build 1.40MIDISC</button>
+        </div>
+
+        <p id="status">Loading patch…</p>
+
+        <div id="downloads" hidden>
+          <button type="button" data-dl="bin">Download 1.40MIDISC.bin</button>
+          <button type="button" class="secondary" data-dl="syx">Download .syx</button>
+        </div>
+      </section>
+
+      <footer>
+        Flash <code>1.40MIDISC.bin</code> from the CompactFlash root with
+        <strong>OS UPGRADE</strong>. Recovery: stock <code>OCTATRACK_OS1.40C</code>.
+      </footer>
+    </main>
+    <script type="module" src="./patcher.js"></script>
+  </body>
+</html>

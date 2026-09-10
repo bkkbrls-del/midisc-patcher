@@ -1,0 +1,195 @@
+:root {
+  --bg: #12140f;
+  --bg2: #1a1e16;
+  --ink: #e8e4d4;
+  --muted: #9a957f;
+  --line: #2e3428;
+  --warn: #c45c26;
+  --warn-bg: #2a1a12;
+  --accent: #7fa35a;
+  --accent-ink: #0e120a;
+  --err: #e07070;
+  --font: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #24301c 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #2a2218 0%, transparent 50%),
+    var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+body {
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.brand {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+}
+
+.warn {
+  background: var(--warn-bg);
+  border-left: 3px solid var(--warn);
+  padding: 1rem 1.1rem;
+  margin: 0 0 1.75rem;
+}
+
+.warn h2 {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: var(--warn);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.warn ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink);
+}
+
+.warn li + li {
+  margin-top: 0.35rem;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--bg2) 88%, black);
+  border: 1px solid var(--line);
+  padding: 1.25rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.panel p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+#drop {
+  border: 1px dashed var(--line);
+  background: #141710;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+#drop.drag,
+#drop:hover {
+  border-color: var(--accent);
+  background: #181d12;
+}
+
+#drop strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+#drop span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+#file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-weight: 600;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+#status {
+  margin: 1rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  min-height: 1.25rem;
+}
+
+#status[data-kind="error"] {
+  color: var(--err);
+}
+
+#downloads {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer code {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
