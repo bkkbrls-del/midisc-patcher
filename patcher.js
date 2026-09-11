@@ -75,7 +75,7 @@ async function build() {
         "MAIN OS hash does not match stock 1.40C. Use an unmodified OCTATRACK_OS1.40C.syx from Elektron.",
       );
     }
-    setStatus("Applying MIDISC patch…");
+    setStatus("Applying MIDISC5 patch…");
     const patched = applySpans(mainOs, patch.spans);
     const patchedHash = await sha256Hex(patched);
     if (patchedHash !== patch.patchedSha256) {
@@ -86,7 +86,7 @@ async function build() {
     const packed = apPack(patched);
     setStatus("Writing version + repacking…");
     const nc = new Uint8Array(container);
-    setElekVersion(nc, patch.name);
+    setElekVersion(nc, patch.splash || patch.name.slice(0, 10));
     const rebuilt = replaceElekSection(nc, packed);
     const syx = encodeSyxElek(rebuilt, device);
     const bin = makeElupBin(rebuilt);
