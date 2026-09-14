@@ -1,11 +1,11 @@
 {
-  "name": "1.40MIDISC8",
-  "splash": "1.40MDISC8",
+  "name": "1.40MIDISCN8.1",
+  "splash": "MIDISCN8.1",
   "base": "1.40C",
-  "source": "golden 1.40MIDISC8 / mainos_midisc40.bin",
+  "source": "1.40MIDISCN8.1 / mainos_midisc40.bin (CC filter on hold)",
   "mainOsSize": 1112560,
   "stockSha256": "164f31224bf61181e3f50e7dec40df9afcae5b16dbf6e4c0d0cc5e986af0a84e",
-  "patchedSha256": "249f9dfabb873264f7472f73ccc61da1fc5b6a07c5b8d52bedcd11a15d21634d",
+  "patchedSha256": "70df682f2ce5365b245e745593aed0bff514aac434375565e97a886ed1906428",
   "spans": [
     {
       "offset": 128976,
@@ -46,10 +46,6 @@
     {
       "offset": 203588,
       "data": "TvlADXo+TnE="
-    },
-    {
-      "offset": 211546,
-      "data": "TvlADWWg"
     },
     {
       "offset": 212924,
@@ -176,38 +172,6 @@
       "data": "DXve"
     },
     {
-      "offset": 425866,
-      "data": "TrlADVHw"
-    },
-    {
-      "offset": 425875,
-      "data": "DEOe"
-    },
-    {
-      "offset": 425887,
-      "data": "DEO6"
-    },
-    {
-      "offset": 426079,
-      "data": "Bw=="
-    },
-    {
-      "offset": 426149,
-      "data": "DEPW"
-    },
-    {
-      "offset": 426355,
-      "data": "DEPW"
-    },
-    {
-      "offset": 426381,
-      "data": "DEPW"
-    },
-    {
-      "offset": 426407,
-      "data": "DEPW"
-    },
-    {
       "offset": 555332,
       "data": "TrlADXwk"
     },
@@ -218,50 +182,6 @@
     {
       "offset": 642535,
       "data": "cQ=="
-    },
-    {
-      "offset": 802562,
-      "data": "Q0M0OA=="
-    },
-    {
-      "offset": 802567,
-      "data": "Q0M1NQ=="
-    },
-    {
-      "offset": 802572,
-      "data": "Q0M1Ng=="
-    },
-    {
-      "offset": 802578,
-      "data": "IDxAC16QSrlGDKaAZwYgPEALXo5OdSA8QAtekEq5RgymhGcGIDxAC16OTnUgPEALXpBKuUYMpohnBiA8QAtejk51IDlGDKaA0K8="
-    },
-    {
-      "offset": 802653,
-      "data": "BAKA"
-    },
-    {
-      "offset": 802659,
-      "data": "ASPARgymgE51IDlGDKaE0K8="
-    },
-    {
-      "offset": 802677,
-      "data": "BAKA"
-    },
-    {
-      "offset": 802683,
-      "data": "ASPARgymhE51IDlGDKaI0K8="
-    },
-    {
-      "offset": 802701,
-      "data": "BAKA"
-    },
-    {
-      "offset": 802707,
-      "data": "ASPARgymiE51"
-    },
-    {
-      "offset": 802718,
-      "data": "QAtiMUALYj1AC2JKQAtiWEAMQwJADEMHQAxDDEAGgcRABoHcQAaCCEAGgkBADEMSQAxDKEAMQz5ABoEMQAaBTEAGhMxABoGIQAxDVEAMQ2xADEOE"
     },
     {
       "offset": 803248,
@@ -1544,34 +1464,6 @@
       "data": "PE51"
     },
     {
-      "offset": 871920,
-      "data": "QflGDkZUcAQhQA=="
-    },
-    {
-      "offset": 871931,
-      "data": "DHAHIUA="
-    },
-    {
-      "offset": 871937,
-      "data": "ECAo"
-    },
-    {
-      "offset": 871941,
-      "data": "CHIDQpAhQA=="
-    },
-    {
-      "offset": 871949,
-      "data": "BLKAbAiQgSCAIUE="
-    },
-    {
-      "offset": 871961,
-      "data": "BEKDNnw="
-    },
-    {
-      "offset": 871967,
-      "data": "G051"
-    },
-    {
       "offset": 876800,
       "data": "cbmA"
     },
@@ -1593,55 +1485,7 @@
     },
     {
       "offset": 876940,
-      "data": "GLJOuUANKMhOuUANLoRO+UAFU5IMgw=="
-    },
-    {
-      "offset": 876965,
-      "data": "MGc="
-    },
-    {
-      "offset": 876969,
-      "data": "KgyD"
-    },
-    {
-      "offset": 876975,
-      "data": "N2c="
-    },
-    {
-      "offset": 876979,
-      "data": "LgyD"
-    },
-    {
-      "offset": 876985,
-      "data": "OGc="
-    },
-    {
-      "offset": 876989,
-      "data": "MnAIsIFn"
-    },
-    {
-      "offset": 876997,
-      "data": "CE75QAM+pE75QAM+YEq5RgymgGc="
-    },
-    {
-      "offset": 877018,
-      "data": "/+Rg"
-    },
-    {
-      "offset": 877023,
-      "data": "Gkq5RgymhGc="
-    },
-    {
-      "offset": 877032,
-      "data": "/9Zg"
-    },
-    {
-      "offset": 877037,
-      "data": "DEq5RgymiGc="
-    },
-    {
-      "offset": 877046,
-      "data": "/8hO+UADPyQ="
+      "data": "GLJOuUANKMhOuUANLoRO+UAFU5I="
     },
     {
       "offset": 877056,
