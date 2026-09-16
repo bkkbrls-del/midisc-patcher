@@ -75,7 +75,7 @@ async function build() {
         "MAIN OS hash does not match stock 1.40C. Use an unmodified OCTATRACK_OS1.40C.syx from Elektron.",
       );
     }
-    setStatus("Applying MIDISCN8.1 patch…");
+    setStatus("Applying MIDISC8.2 patch…");
     const patched = applySpans(mainOs, patch.spans);
     const patchedHash = await sha256Hex(patched);
     if (patchedHash !== patch.patchedSha256) {
