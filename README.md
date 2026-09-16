@@ -6,7 +6,7 @@ Live page: https://bkkbrls-del.github.io/midisc-patcher/
 
 No firmware is hosted here. Patching runs entirely in the browser.
 Frozen from local build `1.40MIDISC8.2` (splash `MIDISC8.2`).
-MIDI CHAN `T1`–`T8` internal route; CC filter on hold.
+MIDISC8 scenes; **CHAN T1–T8 route disabled** (HW brick — WIP in midisc repo). CC filter on hold.
 
 ## Local
 
